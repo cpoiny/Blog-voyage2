@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', serif;
+}
+
+:root {
+ --orange :#C96B41;
+ --beige : #EEDFD4;
+ --noir : #000;
+ --blanc: #FFF;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
