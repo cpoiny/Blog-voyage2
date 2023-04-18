@@ -10,7 +10,7 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 export class HomeComponent {
 voyages : IVoyage[]= VOYAGES;
 
-voyageSelected!: IVoyage;
+voyageSelected = this.voyages.filter((voyage :IVoyage) => voyage.isActive === true);
 
 constructor(
   public voyageService : VoyagesService,
