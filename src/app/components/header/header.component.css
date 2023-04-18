@@ -1,0 +1,36 @@
+section {
+    background-color: var(--beige);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 157px;
+    /* transform : rotate(-90deg); */
+    /* float: left; */
+}
+
+.temperature {
+    border-right: black solid 1px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 15px;
+}
+
+.alignement-temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.carnet {
+    border-left: black solid 1px;
+    text-align: center;
+    padding-top: 70px;
+    width: 30%;
+    height: 100%;
+    font-family: "Inter", serif;
+}
