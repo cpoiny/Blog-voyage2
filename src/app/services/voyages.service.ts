@@ -19,14 +19,18 @@ voyages : IVoyage[] = VOYAGES;
 
 
   //je selectionne un voyage selon son id
-  getVoyagebyId() : void | IVoyage {
+  getVoyagebyId(){
     const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
     console.log("id selected", id);
     const voyageSelectionne = this.voyages.find((voyage: IVoyage) => voyage.id === id); 
     console.log("voyage selectionné", voyageSelectionne);
-    return voyageSelectionne;
+  
   }
 
+  // getMainVoyage() {
+  //   const listVoyage = VOYAGES;
+  //   list
+  // }
 
 
 }
