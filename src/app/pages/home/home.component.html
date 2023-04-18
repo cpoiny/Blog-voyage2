@@ -1,1 +1,30 @@
-<p routerLink="/article">home works!</p>
+<main>
+
+    <figure>
+        <img src=""
+             alt="Elephant at sunset">
+        <figcaption>An elephant at sunset</figcaption>
+    </figure>
+    
+
+<h2>Autres voyages voyages.id</h2>
+
+<ul *ngFor="let voyage of voyages">
+    <li>
+        <figure>
+            <img src=""
+                 alt="Elephant at sunset">
+            <figcaption>
+                {{voyage.pays}} - {{voyage.ville}}
+                {{ voyage.dateDepart  }} . {{voyage.dateRetour}}
+            </figcaption>
+        </figure>
+    </li>
+</ul>
+
+
+
+</main>
+
+
+
