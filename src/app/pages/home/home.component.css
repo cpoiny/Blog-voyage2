@@ -20,7 +20,7 @@ h2 {
 .imageAccueil {
     position: relative;
     margin-bottom : 208px;
-    border : red solid 1px;
+    
     box-sizing: border-box;
 }
 
@@ -50,10 +50,10 @@ h2 {
 .nomimageTopBandeau{
     font-family: 'Lora', serif;
     font-size: 30px;
-    border: black solid 1px;
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
+    padding-left: 49px;
 }
 
 .dateimageTopBandeau{
@@ -63,14 +63,22 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: blue solid 1px;
-    margin: 0 25px;
-    padding-right: 25px;
-    
+    border-left: white solid 1px;
+    padding:  0 15px;
 }
+
+
+/* Composant autre voyages */
 
 /* Image du bas */
 /* FigCaption des images dans la catégorie Autres voyages */
+
+ul li {
+    width: 500px;
+    min-height : 512px;
+    gap: 20px;
+    
+}
 .autreVoyageBandeau{
     height:118px;
     display: flex;

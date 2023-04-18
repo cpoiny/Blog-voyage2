@@ -19,24 +19,8 @@
 
     <h2>Autres voyages </h2>
 
-
     <!-- Composants autres voyages numéro 4 - lien vers les autres articles -->
-    <ul *ngFor="let voyage of voyages">
-        <li>
-            <figure class="autreVoyageImage">
-                <img src="{{voyage.img}}" alt="Elephant at sunset">
-                <figcaption class="autreVoyageBandeau">
-                    <div class="nomBandeau">
-                        {{voyage.pays}} - {{voyage.ville}}
-                    </div>
-                    <div class="dateBandeau">
-                        {{ voyage.dateDepart }} · {{voyage.dateRetour}}
-                    </div>
-                </figcaption>
-            </figure>
-        </li>
-    </ul>
-
-
+    <app-autres-voyages></app-autres-voyages>
+   
 
 </main>
