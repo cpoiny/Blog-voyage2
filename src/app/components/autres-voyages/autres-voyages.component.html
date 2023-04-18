@@ -1,0 +1,20 @@
+
+
+<ul *ngFor="let voyage of voyagesAdecouvrir">
+    <li>
+        <figure class="autreVoyageImage">
+            <img src="{{voyage.img}}" alt="Elephant at sunset">
+            <figcaption class="autreVoyageBandeau">
+                <div class="nomBandeau">
+                    {{voyage.pays}} - {{voyage.ville}}
+                </div>
+                <div class="dateBandeau">
+                    {{ voyage.dateDepart }} · {{voyage.dateRetour}}
+                </div>
+            </figcaption>
+        </figure>
+    </li>
+</ul>
+
+
+

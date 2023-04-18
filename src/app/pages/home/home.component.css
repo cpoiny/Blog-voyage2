@@ -1,9 +1,97 @@
-main{
+.container {
     margin: 165px 175px 165px 308px;
-    border: blue solid 1px;
     height: 100vw;
 }
-figure{
-    height: 668px;
-    border: blue solid 1px;
+figure {
+    position: relative;
+}
+
+img {
+    display: block;
+    width:100%;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+/* Englobe le figure et le figcaption */
+.imageAccueil {
+    position: relative;
+    margin-bottom : 208px;
+    
+    box-sizing: border-box;
+}
+
+/* Balise figure de l'image du haut */
+.imageTop {
+    /* height: 668px; */
+    position: relative;
+}
+
+.imageTopCaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    opacity: 0.7;
+    height:118px;
+    
+    
+}
+.nomimageTopBandeau, .dateimageTopBandeau{
+    color: white;
+    height: 100%;
+    
+}
+.nomimageTopBandeau{
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding-left: 49px;
+}
+
+.dateimageTopBandeau{
+    font-family: 'Inter', serif;
+    font-size: 16px;
+    border-left: white solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: white solid 1px;
+    padding:  0 15px;
+}
+
+
+/* Composant autre voyages */
+
+/* Image du bas */
+/* FigCaption des images dans la catégorie Autres voyages */
+
+ul li {
+    width: 500px;
+    min-height : 512px;
+    gap: 20px;
+    
+}
+.autreVoyageBandeau{
+    height:118px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    align-items: center;
+}
+.nomBandeau{
+    font-family: 'Lora', serif;
+}
+.dateBAndeau{
+    font-family: 'Inter', serif;
+}
+.nomBandeau, .dateBandeau{
+    color: var(--blanc);
 }
