@@ -1,0 +1,57 @@
+
+img {
+    display: block;
+    width:100%;
+}
+
+/* Englobe le figure et le figcaption */
+.imageAccueil {
+    position: relative;
+    margin-bottom : 208px;
+    
+    box-sizing: border-box;
+}
+
+/* Balise figure de l'image du haut */
+.imageTop {
+    /* height: 668px; */
+    position: relative;
+}
+
+.imageTopCaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    opacity: 0.7;
+    height:118px;
+    
+    
+}
+.nomimageTopBandeau, .dateimageTopBandeau{
+    color: white;
+    height: 100%;
+    
+}
+.nomimageTopBandeau{
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding-left: 49px;
+}
+
+.dateimageTopBandeau{
+    font-family: 'Inter', serif;
+    font-size: 16px;
+    border-left: white solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: white solid 1px;
+    padding:  0 15px;
+}
+

@@ -1,4 +1,9 @@
 /* Composant autre voyages */
+img {
+    display: block;
+    width:100%;
+}
+
 
 /* Image du bas */
 /* FigCaption des images dans la catégorie Autres voyages */
@@ -6,7 +11,7 @@
 ul li {
     width: 500px;
     min-height : 512px;
-    gap: 20px;
+    margin-bottom: 20px;
     
 }
 .autreVoyageBandeau{

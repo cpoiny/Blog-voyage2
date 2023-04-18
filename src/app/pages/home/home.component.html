@@ -1,20 +1,22 @@
 <main class="container">
 
-    <div class="imageAccueil">
+    <app-dernier-article></app-dernier-article>
+
+    <!-- <div *ngFor="let voyage of voyageSelected" class="imageAccueil">
         <figure class="imageTop">
-            <img src="assets/img/Albanie.png" alt="Albanie - Tirana">
+            <img src="{{voyage.img}}" alt="{{voyage.pays}}">
             <div>
                 <figcaption class="imageTopCaption">
                     <div class="nomimageTopBandeau">
-                        Albanie - Tirana
+                        {{voyage.pays}} - {{voyage.ville}}
                     </div>
                     <div class="dateimageTopBandeau">
-                        14.12.2022 · 12.25.2022
+                        {{voyage.dateDepart}} · {{voyage.dateRetour}}
                     </div>
                 </figcaption>
             </div>
         </figure>
-    </div>
+    </div> -->
 
 
     <h2>Autres voyages </h2>
