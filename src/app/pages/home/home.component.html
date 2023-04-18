@@ -1,30 +1,40 @@
-<main>
+<main class="container">
 
-    <figure>
-        <img src=""
-             alt="Elephant at sunset">
-        <figcaption>An elephant at sunset</figcaption>
-    </figure>
-    
-
-<h2>Autres voyages voyages.id</h2>
-
-<ul *ngFor="let voyage of voyages">
-    <li>
-        <figure>
-            <img src=""
-                 alt="Elephant at sunset">
-            <figcaption>
-                {{voyage.pays}} - {{voyage.ville}}
-                {{ voyage.dateDepart  }} . {{voyage.dateRetour}}
+    <div class="imageAccueil">
+        <figure class="imageTop">
+            <img src="assets/img/Albanie.png" alt="Albanie - Tirana">
+            <figcaption class="imageTopCaption">
+                <div class="nomimageTopBandeau">
+                    Albanie - Tirana
+                </div>
+                <div class="dateimageTopBandeau">
+                    14.12.2022 / 12.25.2022
+                </div>
             </figcaption>
         </figure>
-    </li>
-</ul>
+    </div>
+
+
+    <h2>Autres voyages </h2>
+
+
+    <!-- Composants autres voyages numéro 4 - lien vers les autres articles -->
+    <ul *ngFor="let voyage of voyages">
+        <li>
+            <figure class="autreVoyageImage">
+                <img src="{{voyage.img}}" alt="Elephant at sunset">
+                <figcaption class="autreVoyageBandeau">
+                    <div class="nomBandeau">
+                        {{voyage.pays}} - {{voyage.ville}}
+                    </div>
+                    <div class="dateBandeau">
+                        {{ voyage.dateDepart }} · {{voyage.dateRetour}}
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
 
 
 
 </main>
-
-
-

@@ -1,9 +1,63 @@
-main{
+.container {
     margin: 165px 175px 165px 308px;
-    border: blue solid 1px;
     height: 100vw;
 }
-figure{
+figure {
+    position: relative;
+}
+
+img {
+    display: block;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+/* Englobe le figure et le figcaption */
+.imageAccueil {
+    position: relative;
+    margin-bottom : 208px;
+}
+
+/* Balise figure de l'image du haut */
+.imageTop {
     height: 668px;
-    border: blue solid 1px;
+    position: relative;
+}
+.imageTopCaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    opacity: 0.7;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+}
+.nomimageTopBandeau, .dateimageTopBandeau{
+    color: white;
+}
+
+
+
+/* Image du bas */
+/* FigCaption des images dans la catégorie Autres voyages */
+.autreVoyageBandeau{
+    height:118px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    align-items: center;
+}
+.nomBandeau{
+    font-family: 'Lora', serif;
+}
+.dateBAndeau{
+    font-family: 'Inter', serif;
+}
+.nomBandeau, .dateBandeau{
+    color: var(--blanc);
 }
