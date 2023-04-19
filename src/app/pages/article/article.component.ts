@@ -10,7 +10,7 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 export class ArticleComponent {
 
   //le voyage que je veux afficher dans ma page detail
-  voyageDetail?: IVoyage;
+  voyageDetail!: IVoyage;
 
   //la liste entiere de mes voyages
   voyages: IVoyage[] = VOYAGES;
@@ -38,7 +38,8 @@ export class ArticleComponent {
 
     // Si j'ai un voyage dans ma liste, j'assigne l'objet à ma variable voyageDetail
     if (voyageArticle) {
-      this.voyageDetail = voyageArticle;
+      this.voyageDetail! = voyageArticle;
+      console.log("voyageDetaille à afficher", this.voyageDetail!);
     }
 
   }

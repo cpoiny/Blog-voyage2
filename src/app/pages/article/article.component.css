@@ -1,0 +1,22 @@
+.container {
+    margin: 165px 175px 165px 308px;
+    height: 100vw;
+}
+.dates{
+    font-family:'Inter', serif;
+    font-size: 16px;
+   
+}
+
+.mainImage{
+    margin-bottom: 115px;
+}
+.espace {
+    margin-bottom: 44px;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    margin-top: 69px;
+    font-weight: normal;
+}
