@@ -1,3 +1,10 @@
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 /* Composant autre voyages */
 img {
     display: block;
@@ -7,18 +14,14 @@ img {
 
 /* Image du bas */
 /* FigCaption des images dans la catégorie Autres voyages */
-ul {
-    border: blue solid 1px;
-    display: flex;
-}
 
 
-ul li {
-    width: 500px;
+
+figure {
+    width: 48%;
     min-height : 512px;
     margin-bottom: 20px;
     list-style: none;
-    
 }
 .autreVoyageBandeau{
     height:118px;
