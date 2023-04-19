@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { AutresVoyagesComponent } from './components/autres-voyages/autres-voyages.component';
 import { DernierArticleComponent } from './components/dernier-article/dernier-article.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DescriptionComponent } from './components/description/description.component';
+import { AvisComponent } from './components/avis/avis.component';
+import { AutresImagesComponent } from './components/autres-images/autres-images.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     AutresVoyagesComponent,
     DernierArticleComponent,
-    FooterComponent
+    FooterComponent,
+    DescriptionComponent,
+    AvisComponent,
+    AutresImagesComponent
   ],
   imports: [
     BrowserModule,

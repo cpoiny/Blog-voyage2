@@ -8,9 +8,6 @@
     color:#000;
 }
 
-
-
-
 :root {
  --orange :#C96B41;
  --beige : #EEDFD4;
@@ -22,6 +19,6 @@ h1 {
     font-family: 'Lora', serif;
     font-weight: normal;
 }
-li {
-    list-style: none;
+body{
+    min-height: 100vh;
 }

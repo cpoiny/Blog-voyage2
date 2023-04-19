@@ -3,28 +3,22 @@ import { ActivatedRoute } from '@angular/router';
 import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 
 @Component({
-  selector: 'app-article',
-  templateUrl: './article.component.html',
-  styleUrls: ['./article.component.css']
+  selector: 'app-description',
+  templateUrl: './description.component.html',
+  styleUrls: ['./description.component.css']
 })
-export class ArticleComponent {
+export class DescriptionComponent {
 
-  //le voyage que je veux afficher dans ma page detail
-  voyageDetail!: IVoyage;
-
-  //la liste entiere de mes voyages
-  voyages: IVoyage[] = VOYAGES;
+voyages : IVoyage[] = VOYAGES;
+voyageDetail! : IVoyage;
 
 
-  constructor(
-    // la page active 
-    public activatedRoute: ActivatedRoute,
-  ) { }
-
-  ngOnInit() {
-    this.getVoyagebyId();
-  }
-
+ngOnInit(){
+  this.getVoyagebyId();
+}
+constructor(
+  public activatedRoute: ActivatedRoute,
+) {}
 
   getVoyagebyId() {
 
@@ -43,4 +37,5 @@ export class ArticleComponent {
     }
 
   }
+
 }

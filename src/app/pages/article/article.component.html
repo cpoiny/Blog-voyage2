@@ -1,3 +1,35 @@
-<p routerLink="">article works!</p>
+<main class="container">
 
-<h1>Albanie</h1>
+    <!-- Afficher le nom du pays et la ville -->
+    <h2>{{voyageDetail!.pays}} - {{voyageDetail!.ville}} </h2>
+
+    
+    <p class="dates espace">{{voyageDetail!.dateDepart}}- {{voyageDetail!.dateRetour}}</p>
+
+   
+    <img class="mainImage" src="{{voyageDetail!.img}}" alt="{{voyageDetail!.pays}}">
+
+
+    <!-- Le voyage -->
+    <h2 class="espace">Le voyage</h2>
+    <app-description></app-description>
+
+
+    <!-- Les avis -->
+    <h2 class="espace">Notre avis</h2>
+    <app-avis></app-avis>
+
+
+
+    <!-- Le résumé -->
+    <h2 class="espace">En résumé</h2>
+
+
+
+
+    <!-- Voyager un peu plus -->
+    <h2 class="espace">Pour voyager un peu plus</h2>
+    <app-autres-images></app-autres-images>
+
+
+</main>

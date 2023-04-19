@@ -12,6 +12,7 @@ ul li {
     width: 500px;
     min-height : 512px;
     margin-bottom: 20px;
+    list-style: none;
     
 }
 .autreVoyageBandeau{
