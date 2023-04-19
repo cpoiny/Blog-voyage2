@@ -10,6 +10,9 @@
 
 .mainImage{
     margin-bottom: 115px;
+    
+    min-height: 686px;
+    width : 100%;
 }
 .espace {
     margin-bottom: 44px;
