@@ -8,6 +8,7 @@ import { ArticleComponent } from './pages/article/article.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AutresVoyagesComponent } from './components/autres-voyages/autres-voyages.component';
 import { DernierArticleComponent } from './components/dernier-article/dernier-article.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DernierArticleComponent } from './components/dernier-article/dernier-ar
     ArticleComponent,
     HeaderComponent,
     AutresVoyagesComponent,
-    DernierArticleComponent
+    DernierArticleComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
