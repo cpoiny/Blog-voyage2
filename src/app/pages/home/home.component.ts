@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { VoyagesService } from 'src/app/services/voyages.service';
 import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 
@@ -9,28 +10,26 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 })
 export class HomeComponent {
 voyages : IVoyage[]= VOYAGES;
-
+voyageDetail? : IVoyage;
 voyageSelected = this.voyages.filter((voyage :IVoyage) => voyage.isActive === true);
 
 constructor(
   public voyageService : VoyagesService,
+  public activatedRoute: ActivatedRoute,
 ) {}
 
 ngOnInit() {
   console.log("mes voyages", this.voyages);
-  this.getVoyagebyId();
-  this.voyages;
-}
-
-
-// function pour récupérer un voyage selon son id
-getVoyagebyId() {
-  const voyageSelect = this.voyageService.getVoyagebyId();
- console.log("voyage selectionne", voyageSelect);
-  
 }
 
 
 
 
+
+
 }
+
+
+
+
+

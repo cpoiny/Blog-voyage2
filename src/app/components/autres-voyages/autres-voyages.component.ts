@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 
 @Component({
@@ -8,8 +9,12 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 })
 export class AutresVoyagesComponent {
 
-  voyages : IVoyage[]= VOYAGES;
+  // je récuère toute ma liste de voyages
+  voyages: IVoyage[] = VOYAGES;
 
-  voyagesAdecouvrir = this.voyages.filter((voyage: IVoyage)=> voyage.isActive === false);
+  // catégorie des autres voyages
+  voyagesAdecouvrir = this.voyages.filter((voyage: IVoyage) => voyage.isActive === false);
+
+
 
 }

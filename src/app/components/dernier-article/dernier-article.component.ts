@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 
 @Component({
@@ -8,8 +9,16 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 })
 export class DernierArticleComponent {
 
-  voyages : IVoyage[]= VOYAGES;
+// tous mes voyages
+voyages : IVoyage[]= VOYAGES;
 
+//voyage de la page d'accueil
 voyageSelected = this.voyages.filter((voyage :IVoyage) => voyage.isActive === true);
 
+
+
 }
+
+
+
+

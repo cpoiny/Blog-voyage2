@@ -1,5 +1,8 @@
+
+<!-- Affiche l'élément selected qui a le boolean isActive a true -->
+
 <div *ngFor="let voyage of voyageSelected" class="imageAccueil">
-    <figure class="imageTop">
+    <figure routerLink="/article/{{voyage.id}}" class="imageTop">
         <img src="{{voyage.img}}" alt="{{voyage.pays}}">
         <div>
             <figcaption class="imageTopCaption">
