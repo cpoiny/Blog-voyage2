@@ -11,6 +11,7 @@ import { DernierArticleComponent } from './components/dernier-article/dernier-ar
 import { FooterComponent } from './components/footer/footer.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { AvisComponent } from './components/avis/avis.component';
+import { AutresImagesComponent } from './components/autres-images/autres-images.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AvisComponent } from './components/avis/avis.component';
     DernierArticleComponent,
     FooterComponent,
     DescriptionComponent,
-    AvisComponent
+    AvisComponent,
+    AutresImagesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+div{
+    border : blue solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+img {
+    width: 320px;
+    height : 320px;
+    margin-bottom:27px;
+
+}
