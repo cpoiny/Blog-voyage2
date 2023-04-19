@@ -7,6 +7,11 @@ img {
 
 /* Image du bas */
 /* FigCaption des images dans la catégorie Autres voyages */
+ul {
+    border: blue solid 1px;
+    display: flex;
+}
+
 
 ul li {
     width: 500px;
