@@ -1,4 +1,4 @@
-div{
+section{
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -10,4 +10,10 @@ img {
     margin-bottom:27px;
     margin-right: 16px;
 
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    margin-top: 69px;
+    font-weight: normal;
 }
