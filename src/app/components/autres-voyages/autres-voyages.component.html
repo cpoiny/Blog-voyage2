@@ -1,8 +1,8 @@
 
-
+<!-- boucles sur la liste des voyages dont le boolean isActive est sur false  -->
 <ul *ngFor="let voyage of voyagesAdecouvrir">
     <li>
-        <figure class="autreVoyageImage">
+        <figure routerLink="/article/{{voyage.id}}" class="autreVoyageImage">
             <img src="{{voyage.img}}" alt="Elephant at sunset">
             <figcaption class="autreVoyageBandeau">
                 <div class="nomBandeau">
