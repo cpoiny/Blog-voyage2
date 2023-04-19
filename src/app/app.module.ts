@@ -10,6 +10,7 @@ import { AutresVoyagesComponent } from './components/autres-voyages/autres-voyag
 import { DernierArticleComponent } from './components/dernier-article/dernier-article.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DescriptionComponent } from './components/description/description.component';
+import { AvisComponent } from './components/avis/avis.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DescriptionComponent } from './components/description/description.compo
     AutresVoyagesComponent,
     DernierArticleComponent,
     FooterComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    AvisComponent
   ],
   imports: [
     BrowserModule,
