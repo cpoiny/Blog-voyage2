@@ -11,24 +11,20 @@
 
 
     <!-- Le voyage -->
-   
     <app-description [title]="'Le voyage'" [text]="voyageDetail!.description"></app-description>
 
 
     <!-- Les avis -->
-    <h2 class="espace">Notre avis</h2>
-    <app-avis></app-avis>
+    <app-avis [positif]="voyageDetail!.points_positifs" [negatif]="voyageDetail!.points_negatifs" [conseil]="voyageDetail!.conseils"></app-avis>
 
 
 
     <!-- Le résumé -->
-    
     <app-description [title]="'En résumé'" [text]="voyageDetail!.resume"></app-description>
 
 
 
     <!-- Voyager un peu plus -->
-   
     <app-autres-images [galerie]="voyageDetail!.galerie"></app-autres-images>
 
 
