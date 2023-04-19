@@ -1,20 +1,23 @@
 
 <!-- boucles sur la liste des voyages dont le boolean isActive est sur false  -->
-<ul *ngFor="let voyage of voyagesAdecouvrir">
+
+<ng-container *ngFor="let voyage of voyagesAdecouvrir">
+<ul >
     <li>
         <figure routerLink="/article/{{voyage.id}}" class="autreVoyageImage">
             <img src="{{voyage.img}}" alt="Elephant at sunset">
             <figcaption class="autreVoyageBandeau">
                 <div class="nomBandeau">
-                    {{voyage.pays}} - {{voyage.ville}}
+                    <span class="pays">{{voyage.pays}}</span>
+                    <span class="ville">{{voyage.ville}}</span>
                 </div>
                 <div class="dateBandeau">
-                    {{ voyage.dateDepart }} · {{voyage.dateRetour}}
+                    du {{ voyage.dateDepart }} au {{voyage.dateRetour}}
                 </div>
             </figcaption>
         </figure>
     </li>
 </ul>
 
-
+</ng-container>
 
