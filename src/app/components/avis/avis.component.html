@@ -1,24 +1,31 @@
-<h3 class="espace">Les plus</h3>
 
-<div class="marge">
+ <h2 class="espace">Notre avis</h2>
+<section>
 
-    <ul *ngFor="let item of voyageDetail!.points_positifs">
-        <li>{{item}}</li>
-    </ul>
-</div>
+    <h3 class="espace">Les plus</h3>
 
-<h3 class="espace">Les moins</h3>
-<div class="marge">
+    <div class="marge">
 
-    <ul *ngFor="let item of voyageDetail!.points_negatifs">
-        <li>{{item}}</li>
-    </ul>
-</div>
+        <ul *ngFor="let item of positif">
+            <li>{{item}}</li>
+        </ul>
+    </div>
 
-<h3 class="espace">Mon conseil</h3>
-<div class="marge">
+    <h3 class="espace">Les moins</h3>
+    <div class="marge">
 
-    <ul *ngFor="let item of voyageDetail!.conseils">
-        <li>{{item}}</li>
-    </ul>
-</div>
+        <ul *ngFor="let item of negatif">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+
+    <h3 class="espace">Mon conseil</h3>
+    <div class="marge">
+
+        <ul *ngFor="let item of conseil">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+
+
+</section>

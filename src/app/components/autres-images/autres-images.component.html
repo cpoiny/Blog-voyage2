@@ -1,8 +1,8 @@
 
-<div>
+<h2 class="espace">Pour voyager un peu plus</h2>
+<section>
     
-    <ng-container *ngFor="let image of voyageDetail!.galerie">
-        <img src="{{image}}" alt="{{voyageDetail!.pays}}">
-    </ng-container>
-</div>
+        <img *ngFor="let image of galerie" src="{{image.img}}" alt="{{image.titre}}">
+   
+</section>
 
