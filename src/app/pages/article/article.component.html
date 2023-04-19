@@ -11,8 +11,8 @@
 
 
     <!-- Le voyage -->
-    <h2 class="espace">Le voyage</h2>
-    <app-description></app-description>
+   
+    <app-description [title]="'Le voyage'" [text]="voyageDetail!.description"></app-description>
 
 
     <!-- Les avis -->
@@ -22,8 +22,8 @@
 
 
     <!-- Le résumé -->
-    <h2 class="espace">En résumé</h2>
-    <app-description></app-description>
+    
+    <app-description [title]="'En résumé'" [text]="voyageDetail!.resume"></app-description>
 
 
 
