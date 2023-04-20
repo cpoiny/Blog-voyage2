@@ -2,6 +2,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { IVoyage, VOYAGES } from '../voyage.mock';
 
 export interface LocationResponse {
   // {
@@ -188,12 +189,17 @@ export class TemperatureService {
 
   apiUrl = environment.temperatureApi.url;
   apiToken = environment.temperatureApi.key;
-  city!: string;
+  
 
+
+  voyages : IVoyage[]= VOYAGES;
+  
 
   constructor(
     private httpClient : HttpClient,
   ) { }
+
+  
 
 
   getLocation(): Observable<LocationResponse> {
@@ -204,6 +210,8 @@ export class TemperatureService {
     console.log("url Location:", url);
     return this.httpClient.get<LocationResponse>(url);
   }
+
+  
 }
 
 
