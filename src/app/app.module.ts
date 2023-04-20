@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { AvisComponent } from './components/avis/avis.component';
 import { AutresImagesComponent } from './components/autres-images/autres-images.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AutresImagesComponent } from './components/autres-images/autres-images.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
