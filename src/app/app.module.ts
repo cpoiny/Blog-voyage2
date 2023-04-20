@@ -13,6 +13,7 @@ import { DescriptionComponent } from './components/description/description.compo
 import { AvisComponent } from './components/avis/avis.component';
 import { AutresImagesComponent } from './components/autres-images/autres-images.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BoutonComponent } from './components/bouton/bouton.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     DescriptionComponent,
     AvisComponent,
-    AutresImagesComponent
+    AutresImagesComponent,
+    BoutonComponent
   ],
   imports: [
     BrowserModule,

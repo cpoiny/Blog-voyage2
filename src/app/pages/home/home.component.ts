@@ -19,7 +19,7 @@ constructor(
 ) {}
 
 ngOnInit() {
-  console.log("mes voyages", this.voyages);
+  //console.log("mes voyages", this.voyages);
 }
 
 
