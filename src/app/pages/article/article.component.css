@@ -21,3 +21,15 @@ h2 {
     margin-top: 69px;
     font-weight: normal;
 }
+
+.bouton-sticky {
+    position:fixed;
+    bottom:0%;
+    right:0%;
+    z-index:9;
+  }
+
+
+  /*version mobile */
+
+ 
