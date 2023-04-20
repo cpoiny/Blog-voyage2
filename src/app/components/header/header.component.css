@@ -5,8 +5,8 @@ section {
     text-align: center;
     justify-content: space-between;
     height: 157px;
-    /* transform : rotate(-90deg); */
-    /* float: left; */
+    transform : rotate(180deg);
+    width: 100vh; 
 }
 
 .temperature {
@@ -33,4 +33,5 @@ section {
     width: 30%;
     height: 100%;
     font-family: "Inter", serif;
+    font-size: 30px;
 }

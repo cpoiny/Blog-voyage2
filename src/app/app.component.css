@@ -1,2 +1,9 @@
-
+app-header{
+    position: absolute;
+    top: 48%;
+    left:-23%;
+    z-index: 9999;
+    transform: rotate(90deg);
+    min-width: 100vh; 
+}
 
