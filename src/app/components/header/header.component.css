@@ -5,10 +5,10 @@ section {
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    width: 10vw; 
+    width: 10vw;
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
 }
 
 .temperature {
@@ -18,9 +18,9 @@ section {
     justify-content: center;
     align-items: end;
     padding-right: 25px;
-    transform : rotate(-90deg);
-    width:500px;
-    height:16%;
+    transform: rotate(-90deg);
+    width: 500px;
+    height: 10vw;
 }
 
 .alignement-temperature {
@@ -33,13 +33,44 @@ section {
     border-left: black solid 1px;
     font-family: "Inter", serif;
     font-size: 30px;
-    transform : rotate(-90deg);
-    width:350px;
-    height:16%;
-    margin-top:100px;
+    transform: rotate(-90deg);
+    width: 350px;
+    height: 10vw;
+    margin-top: 100px;
     padding-left: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;;
-    
+    align-items: center;
+    ;
+
+}
+
+@media (max-width:1360px) {
+    section {
+        width: 100vw;
+        height: 10vh;
+        top: 0;
+        flex-direction: row-reverse;
+
+    }
+
+    .temperature {
+        transform: rotate(-360deg);
+        border-left: black solid 1px;
+        border-right: none;
+        width: 20vw;
+        height: 10vh;
+        margin-right: 10px;
+
+    }
+
+    .carnet {
+        transform: rotate(-360deg);
+        /* border :blue solid 1px; */
+        margin-top: 0;
+        border-right: black solid 1px;
+        border-left: none;
+
+    }
+
 }
