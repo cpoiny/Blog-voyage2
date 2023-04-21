@@ -2,7 +2,10 @@ p {
     padding: 69px 56px;
     background-color: var(--orange);
     color: white;
+    white-space: pre-wrap;
 }
+
+
 
 h2 {
     font-family: 'Lora', serif;

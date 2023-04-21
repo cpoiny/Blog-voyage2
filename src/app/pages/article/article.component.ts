@@ -11,10 +11,12 @@ export class ArticleComponent {
 
   //le voyage que je veux afficher dans ma page detail
   voyageDetail!: IVoyage;
+ 
 
   //la liste entiere de mes voyages
   voyages: IVoyage[] = VOYAGES;
 
+  
 
   constructor(
     // la page active 
@@ -23,8 +25,10 @@ export class ArticleComponent {
 
   ngOnInit() {
     this.getVoyagebyId();
+  
   }
 
+ 
 
   getVoyagebyId() {
 
