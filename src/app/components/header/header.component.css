@@ -5,8 +5,11 @@ section {
     text-align: center;
     justify-content: space-between;
     height: 157px;
-    transform : rotate(180deg);
+    transform : rotate(-90deg);
     width: 100vh; 
+    position: fixed;
+    top: 48%;
+    left:0;
 }
 
 .temperature {

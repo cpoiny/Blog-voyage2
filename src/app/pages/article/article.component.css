@@ -1,6 +1,5 @@
-.container {
-    margin: 165px 175px 165px 308px;
-}
+
+
 .dates{
     font-family:'Inter', serif;
     font-size: 16px;
@@ -9,7 +8,6 @@
 
 .mainImage{
     margin-bottom: 115px;
-    min-height: 686px;
     width : 100%;
 }
 .espace {
@@ -24,8 +22,8 @@ h2 {
 
 .bouton-sticky {
     position:fixed;
-    bottom:0%;
-    right:0%;
+    bottom:0;
+    right:0;
     z-index:9;
   }
 

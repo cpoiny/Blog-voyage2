@@ -1,9 +1,15 @@
-app-header{
-    position: fixed;
-    top: 48%;
-    left:-23%;
-    z-index: 9999;
-    transform: rotate(90deg);
-    min-width: 100vh; 
+
+main{
+    margin: auto;
+    width: 1029px;
 }
 
+@media (max-width:820px){
+    main{
+        width: 100%;
+        padding: 18px;
+    }
+    img{
+        max-width: 100%;
+    }
+}
