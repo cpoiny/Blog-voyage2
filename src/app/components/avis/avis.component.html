@@ -2,7 +2,7 @@
  <h2 class="espace">Notre avis</h2>
 <section>
 
-    <h3 class="espace">Les plus</h3>
+    <h3 class="espace" *ngIf="positif.length > 0">Les plus</h3>
 
     <div class="marge">
 
@@ -11,7 +11,7 @@
         </ul>
     </div>
 
-    <h3 class="espace">Les moins</h3>
+    <h3 class="espace" *ngIf="negatif.length > 0">Les moins</h3>
     <div class="marge">
 
         <ul *ngFor="let item of negatif">
@@ -19,7 +19,7 @@
         </ul>
     </div>
 
-    <h3 class="espace">Mon conseil</h3>
+    <h3 class="espace" *ngIf="conseil.length > 0">Mon conseil</h3>
     <div class="marge">
 
         <ul *ngFor="let item of conseil">
