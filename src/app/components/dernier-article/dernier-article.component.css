@@ -37,7 +37,7 @@ img {
 }
 .nomimageTopBandeau{
     font-family: 'Lora', serif;
-    font-size: 30px;
+    font-size: clamp(15px, 3vw, 30px);
     display: flex;
     align-items: center;
     width: 60%;
@@ -46,7 +46,7 @@ img {
 
 .dateimageTopBandeau{
     font-family: 'Inter', serif;
-    font-size: 16px;
+    font-size: clamp(10px, 3vw, 16px);
     border-left: white solid 1px;
     display: flex;
     align-items: center;

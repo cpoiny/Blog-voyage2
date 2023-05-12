@@ -36,13 +36,14 @@ figure {
     margin-left: 34px;
     border-right: white solid 1px;
     height: 100%;
-    width:65%;
+    width:60%;
     justify-content: center;
 }
 .dateBandeau{
     font-family: 'Inter', serif;
     display: flex;
-    padding-left: 34px;
+    margin: 0 auto;
+    font-size: clamp(12px, 3vw, 16px)
 }
 .nomBandeau, .dateBandeau{
     color: var(--blanc);
@@ -52,9 +53,9 @@ figure {
 }
 .pays{
     font-family: 'Lora',serif;
-    font-size: 24px;
+    font-size: clamp(20px, 3vw, 24px);
 }
 .ville{
     font-family: 'Inter',serif;
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
 }
