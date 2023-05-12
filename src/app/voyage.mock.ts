@@ -25,8 +25,8 @@ export const VOYAGES : IVoyage[] = [
         id: 1,
         pays: "Albanie",
         ville: "Tirana",
-        dateDepart : "12.12.2022",
-        dateRetour : "18.12.2022",
+        dateDepart : "12.12.22",
+        dateRetour : "18.12.22",
         img : "assets/img/Albanie.png",
         galerie : [{
             titre : "Albanie",
@@ -69,10 +69,10 @@ export const VOYAGES : IVoyage[] = [
     },
     {
         id: 2,
-        pays: "Grece",
+        pays: "Grèce",
         ville: "Athènes",
-        dateDepart : "11.10.2022",
-        dateRetour : "18.10.2022",
+        dateDepart : "11.10.22",
+        dateRetour : "18.10.22",
         img : "assets/img/Grece.png",
         galerie : [{
             titre : "Grece",
@@ -117,8 +117,8 @@ export const VOYAGES : IVoyage[] = [
         id: 3,
         pays: "Guatemala",
         ville: "Monterrico",
-        dateDepart : "14.11.2022",
-        dateRetour : "20.11.2022",
+        dateDepart : "14.11.22",
+        dateRetour : "20.11.22",
         img : "assets/img/Guatemala.png",
         galerie : [{
             titre : "Guatemala",
@@ -163,8 +163,8 @@ export const VOYAGES : IVoyage[] = [
         id: 4,
         pays: "Tunisie",
         ville: "Tunis",
-        dateDepart : "05.03.2022",
-        dateRetour : "24.03.2022",
+        dateDepart : "05.03.22",
+        dateRetour : "24.03.22",
         img : "assets/img/Tunisie.png",
         galerie : [{
             titre : "Tunisie",
@@ -209,8 +209,8 @@ export const VOYAGES : IVoyage[] = [
         id: 5,
         pays: "Tunisie",
         ville: "El Jam",
-        dateDepart : "12.12.2021",
-        dateRetour : "18.12.2022",
+        dateDepart : "12.12.21",
+        dateRetour : "18.12.22",
         img : "assets/img/Tunisie-2.png",
         galerie : [{
             titre : "Tunisie-2",
