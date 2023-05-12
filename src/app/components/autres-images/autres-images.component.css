@@ -18,3 +18,9 @@ h2 {
     font-weight: normal;
     margin-bottom: 44px;
 }
+
+@media (max-width:850px) {
+    section {
+        justify-content: center;
+    }
+}

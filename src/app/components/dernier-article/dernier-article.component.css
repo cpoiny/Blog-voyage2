@@ -2,20 +2,21 @@
 img {
     display: block;
     width:100%;
+    /* min-height: 80vw; */
 }
 
 /* Englobe le figure et le figcaption */
 .imageAccueil {
     position: relative;
-    margin-bottom : 208px;
-    
+    margin-bottom : 60px;
     box-sizing: border-box;
+    
 }
 
 /* Balise figure de l'image du haut */
 .imageTop {
-    /* height: 668px; */
     position: relative;
+   
 }
 
 .imageTopCaption{
@@ -24,7 +25,6 @@ img {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* background-color: var(--orange); */
     background-color: rgba(201,107,65, 0.7);
     height:118px;
     
@@ -41,7 +41,7 @@ img {
     display: flex;
     align-items: center;
     width: 60%;
-    padding-left: 49px;
+    padding-left: 20px;
 }
 
 .dateimageTopBandeau{

@@ -9,6 +9,8 @@
 img {
     display: block;
     width:100%;
+    /* min-height: 150px; */
+   
 }
 
 
@@ -19,9 +21,10 @@ img {
 
 figure {
     width: 48%;
-    min-height : 512px;
+    height : 512px;
     margin-bottom: 20px;
     list-style: none;
+    
 }
 .autreVoyageBandeau{
     height:118px;
@@ -58,4 +61,19 @@ figure {
 .ville{
     font-family: 'Inter',serif;
     font-size: clamp(14px, 3vw, 16px);
+}
+@media (max-width: 1100px) {
+    .carte {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    figure {
+        width: 80%;
+        /* max-height : 112px; */
+    margin-bottom: 33px;
+    }
 }
