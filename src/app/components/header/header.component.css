@@ -32,17 +32,21 @@ section {
 }
 
 .carnet {
-    border-left: black solid 1px;
-    font-family: "Inter", serif;
-    font-size: clamp(16px, 3vw,30px);
+    border-left: black solid 1px;  
     transform: rotate(-90deg);
-    width: 70%;
+    width: 220%;
     height: 10vw;
     margin-top: 100px;
     padding-left: 20px;
     display: flex;
     align-items: center;
     
+}
+.carnet p {
+    font-size: clamp(16px, 3vw, 30px);
+    font-family: "Inter", serif;
+    width: 100%;
+    display: block
 }
 
 @media (max-width:1360px) {
@@ -52,6 +56,10 @@ section {
         position: fixed;
         top: 0;
         flex-direction: row-reverse;       
+    }
+    .carnet{
+        width: 90%;
+
     }
 
     .temperature {

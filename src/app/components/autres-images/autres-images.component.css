@@ -23,4 +23,8 @@ h2 {
     section {
         justify-content: center;
     }
+    img{
+        width: 90%;
+        height: 90%;
+    }
 }

@@ -3,7 +3,7 @@ p {
     background-color: var(--orange);
     color: white;
     white-space: pre-wrap;
-    font-size: clamp(18px, 3vw, 60px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 
 
