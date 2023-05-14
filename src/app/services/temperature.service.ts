@@ -5,20 +5,15 @@ import { environment } from 'src/environments/environment';
 import { IVoyage, VOYAGES } from '../voyage.mock';
 
 export interface LocationResponse {
-  // {
-    
-    address: string;
- 
+
+  address: string;
+
   currentConditions: {
-     datetime: string;
-     datetimeEpoch: number;
-     temp: number;
-    }
-   }
- // }
-
-
-
+    datetime: string;
+    datetimeEpoch: number;
+    temp: number;
+  }
+}
 
 @Injectable({
   providedIn: 'root'
@@ -27,18 +22,9 @@ export class TemperatureService {
 
   apiUrl = environment.temperatureApi.url;
   apiToken = environment.temperatureApi.key;
-  
+  voyages: IVoyage[] = VOYAGES;
 
-
-  voyages : IVoyage[]= VOYAGES;
-  
-
-  constructor(
-    private httpClient : HttpClient,
-  ) { }
-
-  
-
+  constructor(private httpClient: HttpClient) { }
 
   getLocation(): Observable<LocationResponse> {
     // url de sortie de l'api est la suivante : 
@@ -48,17 +34,4 @@ export class TemperatureService {
     console.log("url Location:", url);
     return this.httpClient.get<LocationResponse>(url);
   }
-
-  
 }
-
-
-
-
-
-
-
-
-
-
-

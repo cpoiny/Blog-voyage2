@@ -8,21 +8,11 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-cityInfo? : LocationResponse;
+  cityInfo?: LocationResponse;
 
+  constructor(private temperatureService: TemperatureService) { };
 
-
-
-constructor(private temperatureService : TemperatureService) {};
-
-ngOnInit() {
-  this.temperatureService.getLocation().subscribe((next) => this.cityInfo = next);
-
- 
-
-}
-
-
-
-
+  ngOnInit() {
+    this.temperatureService.getLocation().subscribe((next) => this.cityInfo = next);
+  }
 }

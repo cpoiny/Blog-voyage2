@@ -1,16 +1,16 @@
-
-main{
+main {
     margin: auto;
     width: 1029px;
     flex: 1;
 }
 
-@media (max-width:820px){
-    main{
+@media (max-width:820px) {
+    main {
         width: 100%;
         padding: 18px;
     }
-    img{
+
+    img {
         max-width: 100%;
     }
 }

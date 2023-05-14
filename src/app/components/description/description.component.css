@@ -6,8 +6,6 @@ p {
     font-size: clamp(18px, 3vw, 20px);
 }
 
-
-
 h2 {
     font-family: 'Lora', serif;
     font-size: clamp(28px, 3vw, 60px);

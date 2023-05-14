@@ -9,14 +9,11 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
 })
 export class DernierArticleComponent {
 
-// tous mes voyages
-voyages : IVoyage[]= VOYAGES;
+  // tous mes voyages
+  voyages: IVoyage[] = VOYAGES;
 
-//voyage de la page d'accueil
-voyageSelected = this.voyages.filter((voyage :IVoyage) => voyage.isActive === true);
-
-
-
+  //voyage de la page d'accueil
+  voyageSelected = this.voyages.filter((voyage: IVoyage) => voyage.isActive === true);
 }
 
 

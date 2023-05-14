@@ -1,42 +1,37 @@
-
 img {
     display: block;
-    width:100%;
-    /* min-height: 80vw; */
+    width: 100%;
 }
 
 /* Englobe le figure et le figcaption */
 .imageAccueil {
     position: relative;
-    /* margin-bottom : 60px; */
     box-sizing: border-box;
     margin: 0 2vw 60px;
-    
 }
 
 /* Balise figure de l'image du haut */
 .imageTop {
     position: relative;
-   
 }
 
-.imageTopCaption{
+.imageTopCaption {
     position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(201,107,65, 0.7);
+    background-color: rgba(201, 107, 65, 0.7);
     height: min(20%, 118px);
-    
-    
 }
-.nomimageTopBandeau, .dateimageTopBandeau{
+
+.nomimageTopBandeau,
+.dateimageTopBandeau {
     color: white;
     height: 100%;
-    
 }
-.nomimageTopBandeau{
+
+.nomimageTopBandeau {
     font-family: 'Lora', serif;
     font-size: clamp(15px, 3vw, 30px);
     display: flex;
@@ -45,7 +40,7 @@ img {
     padding-left: 20px;
 }
 
-.dateimageTopBandeau{
+.dateimageTopBandeau {
     font-family: 'Inter', serif;
     font-size: clamp(10px, 3vw, 16px);
     border-left: white solid 1px;
@@ -53,6 +48,5 @@ img {
     align-items: center;
     justify-content: center;
     border-left: white solid 1px;
-    padding:  0 15px;
+    padding: 0 15px;
 }
-

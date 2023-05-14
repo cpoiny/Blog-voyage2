@@ -1,16 +1,18 @@
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    
+
 }
+
 img {
     width: 320px;
-    height : 320px;
-    margin-bottom:27px;
+    height: 320px;
+    margin-bottom: 27px;
     margin-right: 16px;
 
 }
+
 h2 {
     font-family: 'Lora', serif;
     font-size: clamp(28px, 3vw, 60px);
@@ -23,7 +25,8 @@ h2 {
     section {
         justify-content: center;
     }
-    img{
+
+    img {
         width: 90%;
         height: 90%;
     }

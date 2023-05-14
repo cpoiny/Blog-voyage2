@@ -1,10 +1,7 @@
-
 <!-- boucles sur la liste des voyages dont le boolean isActive est sur false  -->
 <div class="carte">
 
-   
-
-<ng-container *ngFor="let voyage of voyagesAdecouvrir">
+    <ng-container *ngFor="let voyage of voyagesAdecouvrir">
 
         <figure routerLink="/article/{{voyage.id}}" class="autreVoyageImage">
             <img src="{{voyage.img}}" alt="Elephant at sunset">
@@ -19,7 +16,6 @@
             </figcaption>
         </figure>
 
-</ng-container>
-
+    </ng-container>
 
 </div>

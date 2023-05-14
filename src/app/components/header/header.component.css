@@ -32,7 +32,7 @@ section {
 }
 
 .carnet {
-    border-left: black solid 1px;  
+    border-left: black solid 1px;
     transform: rotate(-90deg);
     width: 220%;
     height: 10vw;
@@ -40,8 +40,8 @@ section {
     padding-left: 20px;
     display: flex;
     align-items: center;
-    
 }
+
 .carnet p {
     font-size: clamp(16px, 3vw, 30px);
     font-family: "Inter", serif;
@@ -55,11 +55,11 @@ section {
         height: 7vh;
         position: fixed;
         top: 0;
-        flex-direction: row-reverse;       
+        flex-direction: row-reverse;
     }
-    .carnet{
-        width: 90%;
 
+    .carnet {
+        width: 90%;
     }
 
     .temperature {
@@ -69,17 +69,14 @@ section {
         width: 25vw;
         height: 6vh;
         margin: 5px;
-
     }
 
     .carnet {
         transform: rotate(-360deg);
-        /* border :blue solid 1px; */
         margin-top: 0;
         border-right: none;
         border-left: none;
-       padding-left: 25px;
-
+        padding-left: 25px;
     }
 
 }
