@@ -15,6 +15,4 @@ export class AutresVoyagesComponent {
   // catégorie des autres voyages
   voyagesAdecouvrir = this.voyages.filter((voyage: IVoyage) => voyage.isActive === false);
 
-
-
 }

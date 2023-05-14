@@ -22,6 +22,7 @@ section {
     transform: rotate(-90deg);
     width: 500px;
     height: 10vw;
+    font-size: clamp(12px, 3vw, 16px);
 }
 
 .alignement-temperature {
@@ -32,49 +33,50 @@ section {
 
 .carnet {
     border-left: black solid 1px;
-    font-family: "Inter", serif;
-    font-size: 30px;
     transform: rotate(-90deg);
-    width: 350px;
+    width: 220%;
     height: 10vw;
     margin-top: 100px;
     padding-left: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    ;
+}
 
+.carnet p {
+    font-size: clamp(16px, 3vw, 30px);
+    font-family: "Inter", serif;
+    width: 100%;
+    display: block
 }
 
 @media (max-width:1360px) {
     section {
         width: 100%;
-        height: 10vh;
+        height: 7vh;
         position: fixed;
         top: 0;
         flex-direction: row-reverse;
+    }
 
-        
-
+    .carnet {
+        width: 90%;
     }
 
     .temperature {
         transform: rotate(-360deg);
         border-left: black solid 1px;
         border-right: none;
-        width: 20vw;
-        height: 10vh;
-        margin-right: 10px;
-
+        width: 25vw;
+        height: 6vh;
+        margin: 5px;
     }
 
     .carnet {
         transform: rotate(-360deg);
-        /* border :blue solid 1px; */
         margin-top: 0;
         border-right: none;
         border-left: none;
-
+        padding-left: 25px;
     }
 
 }

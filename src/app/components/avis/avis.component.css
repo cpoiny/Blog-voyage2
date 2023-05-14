@@ -1,21 +1,29 @@
 h3 {
     font-family: 'Lora', serif;
-    font-style: 24px;
+    font-size: 24px;
     font-weight: normal;
 }
+
 .espace {
     margin-bottom: 33px;
 }
-.marge{
+
+.marge {
     margin-bottom: 57px;
 }
+
 h2 {
     font-family: 'Lora', serif;
-    font-size: 60px;
+    font-size: clamp(28px, 3vw, 60px);
     margin-top: 69px;
     font-weight: normal;
     margin-bottom: 44px;
 }
+
 ul {
     padding-left: 45px;
+}
+
+li {
+    font-size: 20px;
 }

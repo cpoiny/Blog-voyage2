@@ -8,9 +8,6 @@ import { IGalerie} from 'src/app/voyage.mock';
 })
 export class AutresImagesComponent {
 
-  @Input() galerie!: IGalerie[];
-
-
-  
+  @Input() galerie!: IGalerie[];  
 
 }

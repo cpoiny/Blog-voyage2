@@ -9,23 +9,14 @@ import { IVoyage, VOYAGES } from 'src/app/voyage.mock';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-voyages : IVoyage[]= VOYAGES;
-voyageDetail? : IVoyage;
-voyageSelected = this.voyages.filter((voyage :IVoyage) => voyage.isActive === true);
+  voyages: IVoyage[] = VOYAGES;
+  voyageDetail?: IVoyage;
+  voyageSelected = this.voyages.filter((voyage: IVoyage) => voyage.isActive === true);
 
-constructor(
-  public voyageService : VoyagesService,
-  public activatedRoute: ActivatedRoute,
-) {}
-
-ngOnInit() {
-  //console.log("mes voyages", this.voyages);
-}
-
-
-
-
-
+  constructor(
+    public voyageService: VoyagesService,
+    public activatedRoute: ActivatedRoute,
+  ) {}
 
 }
 

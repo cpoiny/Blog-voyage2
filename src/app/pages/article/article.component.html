@@ -1,12 +1,12 @@
 <main class="container">
 
     <!-- Afficher le nom du pays et la ville -->
-    <h2>{{voyageDetail!.pays}} - {{voyageDetail!.ville}}  </h2>
+    <h2>{{voyageDetail!.pays}} - {{voyageDetail!.ville}} </h2>
 
-    
+
     <p class="dates espace">{{voyageDetail!.dateDepart}} - {{voyageDetail!.dateRetour}}</p>
 
-   
+
     <img class="mainImage" src="{{voyageDetail!.img}}" alt="{{voyageDetail!.pays}}">
 
 
@@ -15,18 +15,19 @@
 
 
     <!-- Les avis -->
-    <app-avis [positif]="voyageDetail!.points_positifs" [negatif]="voyageDetail!.points_negatifs" [conseil]="voyageDetail!.conseils"></app-avis>
-
+    <app-avis [positif]="voyageDetail!.points_positifs" [negatif]="voyageDetail!.points_negatifs"
+        [conseil]="voyageDetail!.conseils"></app-avis>
 
 
     <!-- Le résumé -->
     <app-description [title]="'En résumé'" [text]="voyageDetail!.resume"></app-description>
 
 
-
     <!-- Voyager un peu plus -->
     <app-autres-images [galerie]="voyageDetail!.galerie"></app-autres-images>
 
+
+    <!-- bouton back -->
     <app-bouton class="bouton-sticky"></app-bouton>
+
 </main>
-    

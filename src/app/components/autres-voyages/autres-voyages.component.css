@@ -1,14 +1,15 @@
-.carte{
+.carte {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 2vw;
 }
 
 
 /* Composant autre voyages */
 img {
     display: block;
-    width:100%;
+    width: 100%;
 }
 
 
@@ -19,42 +20,68 @@ img {
 
 figure {
     width: 48%;
-    min-height : 512px;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     list-style: none;
 }
-.autreVoyageBandeau{
-    height:118px;
+
+
+.autreVoyageBandeau {
+    height: min(8vh, 118px);
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     background-color: var(--orange);
     align-items: center;
 }
-.nomBandeau{
+
+.nomBandeau {
     display: flex;
     flex-direction: column;
     margin-left: 34px;
     border-right: white solid 1px;
     height: 100%;
-    width:65%;
+    width: 60%;
     justify-content: center;
 }
-.dateBandeau{
+
+.dateBandeau {
     font-family: 'Inter', serif;
     display: flex;
-    padding-left: 34px;
+    margin: 0 auto;
+    font-size: clamp(12px, 3vw, 16px)
 }
-.nomBandeau, .dateBandeau{
+
+.nomBandeau,
+.dateBandeau {
     color: var(--blanc);
 }
-.pays, .ville{
+
+.pays,
+.ville {
     color: white;
 }
-.pays{
-    font-family: 'Lora',serif;
-    font-size: 24px;
+
+.pays {
+    font-family: 'Lora', serif;
+    font-size: clamp(20px, 3vw, 24px);
 }
-.ville{
-    font-family: 'Inter',serif;
-    font-size: 16px;
+
+.ville {
+    font-family: 'Inter', serif;
+    font-size: clamp(14px, 3vw, 16px);
+}
+
+@media (max-width: 800px) {
+    .carte {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    figure {
+        width: 90%;
+
+    }
+
+
 }

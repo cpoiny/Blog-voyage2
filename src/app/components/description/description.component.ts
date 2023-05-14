@@ -8,8 +8,5 @@ import { Component, Input } from '@angular/core';
 export class DescriptionComponent {
 
   @Input() title! : string;
-  @Input() text! : string;
-
-  
-
+  @Input() text! : string; 
 }
